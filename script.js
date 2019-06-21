@@ -1,5 +1,5 @@
 class PostAjax {
-	constructor(load_more) {
+  constructor(load_more) {
     this.paged = 1;
     this.load_more = load_more;
     this.content = document.querySelector(`.${pa_.DOM.section_content}`);
@@ -13,7 +13,7 @@ class PostAjax {
     this.load_more.addEventListener('click', e =>
       this.sendAjax(e)
     );
-	}
+  }
 
   sendAjax(e) {
     e.preventDefault();
@@ -34,9 +34,9 @@ class PostAjax {
 
 	handleSuccess(res) {
     this.paged = parseInt(res.paged) + 1;
-		this.content.innerHTML += res.html;
+    this.content.innerHTML += res.html;
     this.checkPostStock();
-	}
+  }
 
   checkPostStock() {
     if (parseInt(this.paged) === parseInt(this.max_num_pages))
