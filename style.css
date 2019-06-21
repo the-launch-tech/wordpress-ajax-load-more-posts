@@ -1,0 +1,40 @@
+.pa_wrapper {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pa_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  margin: 40px 0;
+}
+#pa_load_more {
+  font-size: 32px;
+  color: grey;
+  border: solid 1px grey;
+  padding-top: 2px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s;
+}
+.pa_content article {
+  width: 98%;
+  margin: 0 1% 20px;
+}
+.pa_content .entry-title,
+.pa_content .entry-content {
+  margin: 5px 0;
+}
