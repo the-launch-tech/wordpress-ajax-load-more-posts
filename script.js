@@ -32,7 +32,7 @@ class PostAjax {
     });
   }
 
-	handleSuccess(res) {
+  handleSuccess(res) {
     this.paged = parseInt(res.paged) + 1;
     this.content.innerHTML += res.html;
     this.checkPostStock();
