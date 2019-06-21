@@ -30,7 +30,7 @@ class Post_Ajax {
     );
 
     add_action('wp_enqueue_scripts', array($this, self::PREFIX.'scripts'));
-		add_action('wp_enqueue_scripts', array($this, self::PREFIX.'styles'));
+    add_action('wp_enqueue_scripts', array($this, self::PREFIX.'styles'));
 
     add_action('wp_ajax_nopriv_'.self::ACTION, array($this, self::ACTION));
     add_action('wp_ajax_'.self::ACTION, array($this, self::ACTION));
